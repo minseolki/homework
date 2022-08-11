@@ -1,16 +1,16 @@
 public class Taxi extends Transport{
-    String taxiNum;
+    String taxiNum;   // 택시번호
     int gas;
     int speed;
     String dest;
-    int basicDis;
-    int destDis;
-    int basicFee;
-    int extraFee;
-    String stat;
-    int pay = this.basicFee+this.extraFee;
+    int basicDis;  // 기본거리
+    int destDis;  // 추가거리
+    int basicFee; // 기본요금
+    int extraFee;  // 추가요금
+    String stat;  // InService : 운행중,   end : 차고지
+    int pay = this.basicFee+this.extraFee;  // 계산금액
 
-    int income;
+    int income; //  누적금액
 
     public Taxi(String num){
         this.taxiNum = num;

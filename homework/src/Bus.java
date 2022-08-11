@@ -1,12 +1,13 @@
 public class Bus extends Transport{
 
-    int maxP;
-    int nowP;
+    int maxP;  // 남은좌석
+    int nowP;  // 현재 탑승객
     int cost;
     String busNum;
     int gas;
     int speed;
-    String stat;
+    String stat; // InService : 운행중,   end : 차고지
+    
 
     public Bus(String busNum){
         this.busNum = busNum;

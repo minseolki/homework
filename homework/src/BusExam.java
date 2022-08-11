@@ -23,5 +23,7 @@ public class BusExam {
         b1.changeStat();
 
 
+
+
     }
 }
